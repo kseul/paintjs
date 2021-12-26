@@ -1,0 +1,82 @@
+body {
+  background-color: #f6f9fc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+}
+
+.canvas {
+  width: 700px;
+  height: 700px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px;
+}
+
+.controls .controls__range {
+  margin-bottom: 30px;
+}
+
+.controls .controls__btns {
+  margin-top: 25px;
+}
+
+.controls .controls__btns button {
+  all: unset;
+  cursor: pointer;
+  border: 1px solid rgb(230, 230, 230);
+  border-radius: 50px;
+  background-color: white;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 6%);
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: rgb(110, 110, 110);
+  padding: 4px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.jsColor {
+  transition: transform 0.1s;
+}
+
+.controls .controls__btns button:active,
+.jsColor:active {
+  transform: scale(0.98);
+  box-shadow: 0 4px 6px rgb(50 50 93 / 23%), 0 1px 3px rgb(0 0 0 / 8%);
+}
+
+.controls .controls__btns button#jsMode {
+  margin: 10px;
+}
+.controls .controls__btns button#jsSave {
+  margin: 10px;
+}
+.controls .controls__btns button#jsReset {
+  margin: 10px;
+}
+
+.controls .controls__colors {
+  display: flex;
+}
+
+.controls__colors .controls__color {
+  margin: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+  cursor: pointer;
+}
